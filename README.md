@@ -2,22 +2,29 @@
 # Team 5 Octocat - Sprint One Report
 # InterpretAir Project
 
-##### Project Goal
-Our project is called InterpretAir and it is going to be a web application that uses real-time video translation.
-The goal is to improve the communication quality between people who don’t speak the same language by utilizing existing technologies (i.e. Amazon Transcribe, SendBird) in the form of API's and building our own product.
-
-##### Project Objectives
-Enhance the user’s experience of digital communication by integrating real-time translation technology into a video chat app/platform.
-
-##### Scope
-This project will be a web-based Real Time Communication platform used to transcribe and translate communication remotely between users.
-Possible features include translation between numerous languages, chat room integration, storage of chat data, data encryption, user authentication, and features for assistive hearing.
-
 ##### Team Members
 1. Alex Wang
 2. Aury-Ken Bwashi
 3. David Powers
 4. Khang Duong
+
+---
+
+#### Project Name and Concept
+Our project is called InterpretAir and it is going to be a web application that uses real-time video translation.
+The goal is to improve the communication quality between people who don’t speak the same language by utilizing existing technologies (i.e. Amazon Transcribe, Google Translate, Vidyo) in the form of API's and building our own product.
+
+#### Scope
+This project will be a web-based Real Time Communication platform used to transcribe and translate communication remotely between users.
+Possible features include translation between numerous languages, chat room integration, storage of chat data, data encryption, user authentication, and features for assistive hearing. The project duration is 16 weeks starting from January 9th until April 22nd. 
+
+---
+
+#### Industry Competitors
+##### Skype/Skype Translator
+##### Google Hangouts
+##### Appearin
+
 
 ### Roles 
 | Roles            | Sprint 1           | Sprint 2           |  Sprint 3                         |
@@ -89,13 +96,14 @@ Unathenticated users can use the platform without logging in, by just creating a
 Authenticated users will have their own account where they can store their transcripts and have a list of contacts. The list of contacts allows the user to chat or call them when they are online. 
 
 ### 9. Creation of Dev Environment (local laptop)
-Most of our configurations are done by scripts under provisioners in our VagrantFile. 
+Most of our configurations are done by scripts under provisioners in our VagrantFile.  
 
 ### 10. Layout Design
 Layout design is simple and user friendly. Not cluttered, it will be minimal but still with all the required functionalityies. 
 
 ### 11. Management of Visio
-Created diagrams of User workflow and Application architecture.
+Created diagrams of User workflow and Application architecture
+Application Architecture of MEAN stack and MVC infrastructure. 
 
 ### 12. Management of Project progress
 1. Trello
@@ -110,5 +118,5 @@ This is where our entire code is hosted on. We can see who
 4. Github Issues to resolve bug posts from UI/UX tester
 
 ### 13. 15 real "test" users and proper data to test functionality of a system - No system is ever used "blank" always fill it up with real data
-
+Users accounts are stored in the database server after the user inputs their personal information in the registration form. There are 15 test users that can login to the authenticated site which allows them use the main functionalities and store transcripts after phone call. 
   
