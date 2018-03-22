@@ -1,6 +1,5 @@
 # ITMT 430 
-# Team 5 Octocat - Sprint One Report
-# InterpretAir Project
+# Team 5 Octocat - InterpretAir Project
 
 ##### Team Members
 1. Alex Wang
@@ -77,34 +76,35 @@ This one is not quite popular and we couldn't find out which technology stack it
 ### Sprint 1
 In the Sprint 1, we divided the project into different parts which we agreed, as a team, that they consist of the most critical functions of the project. We prioritized the functions of the web application and we thought we should tackle the main functions first as they are the most time consuming. The main functions include Vidyo.io API, Transcribe and Translate. We chose to create a skeleton of the project first, then create the "empty" web pages (profile, contacts, settings) without any functionalities to have a visualised flow of the website. At the same time, IT Operations role was starting to create a shared environment using Vagrant, Packer and VirtualBox. Project Manager was responsible to create an efficient system by dividing the tasks to Trello cards and using Slack to check on the work of each role. 
 
-| Goals                                                                                                   | Status             |
-| --------------------------------------------------------------------------------------------------------|:------------------:| 
-| Generate Deploy keys                                                                                    | Completed          | 
-| Create/Design profile, contacts, and settings web pages                                                 | Completed          | 
-| Create logout action                                                                                    | Completed          | 
-| Refine the UI Layout Design                                                                             | Completed          | 
-| User signup with mongoDB                                                                                | In Progress 35%    | 
-| Demo a Vidyo.io call                                                                                    | In Progress        | 
-| Integrate Authentication                                                                                | In Progress        | 
-| Translation | Transcribe                                                                                | In Progress        | 
-| Intergrate vagrant/packer automation                                                                    | In Progress        |
-| Extract audio from Video                                                                                | In Progress        |
+| Goals                                                                                                   | 
+| --------------------------------------------------------------------------------------------------------|
+| Create a skeleton of the MEAN stack infrastructure                                                      | 
+| Create/Design profile, contacts, and settings web pages                                                 |  
+| Create logout action                                                                                    | 
+| Refine the UI Layout Design                                                                             | 
+| User signup with mongoDB                                                                                | 
+| Demo a Vidyo.io call                                                                                    | 
+| Integrate Authentication                                                                                |
+| Translation | Transcribe                                                                                | 
+| Intergrate vagrant/packer automation                                                                    | 
+| Extract audio from Video                                                                                | 
 
 
 
 ### Sprint 2
-Since, our goals for first week
+Our goals for Sprint 1 were too large to tackle on so we had to break it down to smaller atomic goals. We have incorporated SnippetBot into our Slack channel to keep track of each role's process. In this way, we establish structure for each individual and it's also visible for everyone to see. By establish transparency, we can view each other's progress and hold each other more accountable to our tasks like Toyota factory production system. 
+
 | Goals                                                                                                   | 
 | --------------------------------------------------------------------------------------------------------|
 | Generat Deploykeys                                                                                      |  
-| Create/Design profile, contacts, and settings web pages                                                 | Completed          | 
-| Create logout action                                                                                    | Completed          | 
-| Refine the UI Layout Design                                                                             | Completed          | 
-| User signup with mongoDB                                                                                | In Progress 35%    | 
-| Demo a Vidyo.io call                                                                                    | In Progress        | 
-| Authentication Integration                                                                              | In Progress        | 
-| Translation | Transcribe                                                                                | In Progress        | 
-| Intergrate vagrant/packer automation                                                                    | In Progress        |
+| Create/Design profile, contacts, and settings web pages                                                 | 
+| Create logout action                                                                                    | 
+| Refine the UI Layout Design                                                                             | 
+| User signup with mongoDB                                                                                | 
+| Demo a Vidyo.io call                                                                                    | 
+| Authentication Integration                                                                              | 
+| Translation | Transcribe                                                                                |  
+| Intergrate vagrant/packer automation                                                                    | 
 
 
 ### Sprint 3
@@ -128,28 +128,55 @@ MEAN is an acronym, which stands for Mongo DB (database system), Express (back-e
 
 MEAN stack uses JSON as the format for data-interchange on all the layers. So, there is no need to use libraries for converting data during client-side and server-side interaction. JSON also allows working with external APIs (application programming interfaces) easily which is ideal for our project.
 
-Mongo DB is a great choice for database system when managing huge tables with tons of data. Unlike any other database, adding a field to Mongo DB is simpler as it does not require updating the entire table. Moreover, it is a NOSQL and a document model database, which is extremely flexible to use in a variety of applications. In Mongo DB, documents resemble to objects in an object-oriented programming language. A document can be queried on any field and data access is simplified by reducing the use for joins.
-
 Express.js is used in creating server side web applications faster and smarter, simplicity, minimalism, flexibility, scalability, easy to configure and customize, allows you to create rest API server, easy to connect with databases.
 
 Angular.js is a front-end JavaScript development framework for developing single-page applications. It allows a clean way of adding interactive functions and AJAX-driven rich components on the client-side. Since, you have Node.js providing a server-side solution; there is JavaScript implementation on both client and server-side. This makes programming applications with MEAN stack very effective.
 
 Node.js also runs on LINUX, Windows and OS X. Node.js operates on a single thread for processing incoming HTTP requests. It uses non-blocking I/O (input-output) calls to handle multiple new incoming requests efficiently. Unlike other web servers like Apache, Node.js is extremely fast and scalable, supporting thousands of concurrent connections. Node.js uses web sockets to enable sending data to client without having the client to request it. Hence, it is an ideal choice for developing real-time web applications like chatting applications. Node.js is also supported by a large module library. 
  
-### 2. Operating System: Ubuntu Linux Distribution
+### 2. Operating System: Ubuntu Linux 17.10 Distribution
+Our team chose Ubuntu for following reasons:
+1. All our team members are familiar with linux based operating system. 
+2. It's free and doesn't cost to download or setup.
+3. It's secure as it has built-in firewalls and virus protection method that makes sure you’re protected. In comparison to Windows, the malware risks associated with Ubuntu Linux are negligible.
+4. It's highly customizable so we can configure it to the way we want so it will run smoothly with our web appplication, 
+5. Ubuntu has a strong community support and it’s one of the biggest advantages of Ubuntu over other distrubutions. 
+6. Low system requirements so it can run across all our laptops. The recommended hardware requirements are 700 MHz processor, 512MB RAM, and 5GB hard disk.
+7. It's open source. 
 
 ### 3. MongoDB used to store data.
+We chose Mongo DB because it's great for database system when managing huge tables with tons of data. Unlike any other database, adding a field to Mongo DB is simpler as it does not require updating the entire table. Moreover, it is a NOSQL and a document model database, which is extremely flexible to use in a variety of applications. In Mongo DB, documents resemble to objects in an object-oriented programming language. A document can be queried on any field and data access is simplified by reducing the use for joins.
+
 ### 4. Data encrypted at rest
 Passwords are hashed to protect personal information. Private networks are only being used by admin.
+
+The data encryption process for MongoDB includes:
+1. Generating a master key.
+1. Generating keys for each database.
+1. Encrypting data with the database keys.
+1. Encrypting the database keys with the master key.
+
+The encryption occurs transparently in the storage layer; i.e. all data files are fully encrypted from a filesystem perspective, and data only exists in an unencrypted state in memory and during transmissionThe database keys are internal to the server and are only paged to disk in an encrypted format. MongoDB never pages the master key to disk under any circumstances.
+Only the master key is external to the server (i.e. kept separate from the data and the database keys), and requires external management. To manage the master key, MongoDB’s encrypted storage engine supports two key management options:
+
+1. Integration with a third party key management appliance via the Key Management Interoperability Protocol (KMIP).
+1. Local key management via a keyfile.
+
+To encrypt all of MongoDB’s network traffic, we use TLS/SSL (Transport Layer Security/Secure Sockets Layer).
+
 ### 5. Database Master/Slave Replication
+
 ### 6. Use of Responsive Design 
 Make sure login and signup are resizable and work cross platforms both on the website and mobile phones. 
+
 ### 7. Use of https
 Make sure the communication is secured and protected. Real Time Communication. 
+
 #### a. Self-signed certs 
 #### b. Google Authentication for login
 Using Gmail to login. 
 #### c. SQRL
+
 ### 8. Use of user authentication
 Unathenticated users can use the platform without logging in, by just creating a room and inviting other users in. Transcripts are not stored in their account but end of each call, there will be a summary page with the option to download or email the transcript to themselves. 
 
@@ -191,5 +218,5 @@ https://www.skype.com/en/features/skype-translator/
 https://blogs.skype.com/news/2014/12/15/skype-translator-how-it-works/
 https://www.quora.com/What-are-the-programming-languages-used-in-making-Google+
 https://www.quora.com/What-language-is-Google-Talk-written-in
-
+https://fossbytes.com/reasons-to-use-ubuntu-linux-advantage/
 
