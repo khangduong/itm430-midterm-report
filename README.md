@@ -15,15 +15,44 @@ Our project is called InterpretAir and it is going to be a web application that 
 The goal is to improve the communication quality between people who don’t speak the same language by utilizing existing technologies (i.e. Amazon Transcribe, Google Translate, Vidyo) in the form of API's and building our own product.
 
 #### Scope
-This project will be a web-based Real Time Communication platform used to transcribe and translate communication remotely between users.
-Possible features include translation between numerous languages, chat room integration, storage of chat data, data encryption, user authentication, and features for assistive hearing. The project duration is 16 weeks starting from January 9th until April 22nd. 
+This project is a web-based Real Time Communication platform used to transcribe and translate communication remotely between users who don't speak the same language. The project duration is 16 weeks starting from January 9th until April 22nd. Features that will be implemented in this time frame will be video call between two or more users (video conference/group call up to 6 users). Transcribing the video call conversations and translating the transcripts to the desired language by the user - this feature will only be implemented between two users due to the time constraint. The transcripts will be saved if the user is signed up and has an account with InterpretAir. All personal information and password will be protected using database encryption and password hashing. 
 
 ---
 
-#### Industry Competitors
-##### Skype/Skype Translator
-##### Google Hangouts
-##### Appearin
+### Industry Competitors
+#### Skype/Skype Translate
+##### How do they function:
+Skype is a proprietary VoIP system using its own protocol based on peer-to-peer (P2P) networking; essentially, it works by creating ad-hoc, direct communication between two computers on the Internet. When you sign on to Skype, your computer becomes one node in a global network of equal peers. Each Skype user runs a piece of software called a client that allows them to send messages to other Skype users, make calls, send files, and play real-time games. Each of the clients becomes an active part of the network and, whether it's actively sending messages or not, helps the network as a whole to locate and route traffic to other users. Within the network, some of the users with highest bandwidth and best connectivity, known as supernodes, act as traffic hubs. The network as a whole is made up of supernodes connected to one another, with each supernode linking to many ordinary nodes.
+
+Skype Translate takes the words you speak, converts them into text, translates that text, and then synthesizes them into spoken words in the language of the person on the other end of the call. 
+
+##### How are they built:
+The "core" functionality - making audio, video and messaging, so the shared business logic - are written in C++ and built targeting the specific platform. The Windows Skype desktop client is written mostly in Delphi, using the mentioned C++ component for the core business logic. The mobile versions are written in the native language those platforms support, so the iOS client is written in Objective C, Android in Java, Windows Phone in C#. The mobile versions use similar, but mobile optimized C++ libraries to the desktop for the core calling functions.  The other platforms - Mac, XBox, Sony Smart TV etc - all use the native development language for the given platform and similar C++ libraries.
+
+Skype Translator uses machine learning. So the more you use it, the better it gets. Their voice translator currently works in 8 languages, and our text translator is available in more than 50 languages for instant messaging.
+
+#### Google Hangouts
+##### How do they function:
+Google Hangouts is a communication platform developed by Google which includes messaging, video chat, SMS and VOIP features. Hangouts allows conversations between two or more users. The service can be accessed online through the Gmail or Google+ websites, or through mobile apps available for Android and iOS. Chat histories are saved online, allowing them to be synced between devices. As with the previous Google+ Hangouts, users can also perform a group video chat with up to 10 users at a time. 
+
+##### How are they built:
+
+#### Appearin
+##### How do they function:
+
+##### How are they built:
+
+#### Messenger
+##### How do they function:
+
+##### How are they built:
+
+#### Slack
+##### How do they function:
+
+##### How are they built:
+
+
 
 
 ### Roles 
@@ -119,4 +148,12 @@ This is where our entire code is hosted on. We can see who
 
 ### 13. 15 real "test" users and proper data to test functionality of a system - No system is ever used "blank" always fill it up with real data
 Users accounts are stored in the database server after the user inputs their personal information in the registration form. There are 15 test users that can login to the authenticated site which allows them use the main functionalities and store transcripts after phone call. 
-  
+ 
+ 
+## Sources 
+https://www.quora.com/What-is-Skype-coded-in
+http://www.explainthatstuff.com/how-voip-works.html
+https://www.wired.com/2014/12/skype-used-ai-build-amazing-new-language-translator/
+https://www.skype.com/en/features/skype-translator/
+
+
