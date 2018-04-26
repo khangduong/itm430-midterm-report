@@ -29,15 +29,13 @@ The developer was working to fix the CORS issue that we had from previous sprint
 | Written Report + Oral Presentation                                                               |Completed           |
 | Https Encryption - SSL/TLS                                                                       |Completed           |
 
-# What we learned from this Sprint
+## What we learned from this Sprint
 1. Automation is difficult and we have a long way to go until Continuous Integration is integrated
 1. We need to make smaller and more frequent commits - this really makes fixes easier.
 1. A lot of errors occured during building packer, runinng scripts, provisioners etc.
 1. Once environment is properly set up with automated deploy and continuous integration - time to focus on development of main functions of the web application 
 
----
-
-# Next steps for Sprint 4
+## Next steps for Sprint 4
 1. Better Continuous Integration to ensure our collaboration will run smoothly and we will solve and locate problems faster if they are encountered early on.
 2. Slave Database
 3. Google Authentication with gmail
@@ -45,8 +43,6 @@ The developer was working to fix the CORS issue that we had from previous sprint
 5. MongoDB's network traffic - use of [TLS/SSL] (Transport Layer Security/Secure Sockets Layer)
 6. Media Queries for responsiveness
 7. Build Automation 
-
----
 
 ### Sprint Four Goals
 | Task                                                                                                    | Role               |
