@@ -1,4 +1,4 @@
-## Sprint 3 report
+# Sprint 3 report
 
 ## Assigned Roles 
 
