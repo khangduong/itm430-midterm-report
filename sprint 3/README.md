@@ -16,9 +16,7 @@ The UI/UX worked closely with the developer to make sure the Login and Registrat
 The developer was working to fix the CORS issue that we had from previous sprint and also incorporating bcrypt.js node module to hash the user passwords and store them safely. These two tasks lie under "Login and Registration Function" card. Also we ran into some GitHub issues that needed to revert back to some commits. Some of us were new to using github so this was part of our learning process. 
 
 
-### Sprint 3
-This Sprint we ran into few problems and had to prioritize our goals again so we can meet the midterm requirements. We were lacking on the Operation so we shifted our focus towards the automation. We discussed as a team to set goals for the midterm which was to make sure Login and Sign Up is fully functional and integrated with MongoDB. Our UI/UX role had to refine the login and sign up form layout of the webpages, and create Dashboard page for our Video Call window for both Authenticated and Unathenticated users. Our project manager was keeping track of everyone's work and make sure everyone was on top of their task. Also, the project manager had to prepare the written report and a oral presentation. The IT Operations had to make sure everyone's environment can deploy without manual intervention.
-
+### Sprint 3 Goals
 | Goals                                                                                            |Status              |
 | -------------------------------------------------------------------------------------------------|--------------------|
 | Review/Modify Milestones according to new artifacts                                              |Completed           |
@@ -26,8 +24,19 @@ This Sprint we ran into few problems and had to prioritize our goals again so we
 | Registration UI - Functional                                                                     |Completed           |
 | Fix CORS issue                                                                                   |Completed           |
 | Revert back to working commit                                                                    |Completed           |
-| Unauthenticated Dashboard UI                                                                     |Completed           |
+| Unauthenticated Dashboard UI                                                                     |In Progress         |
 | Authenticated Dashboard UI                                                                       |In Progress         |
 | Written Report + Oral Presentation                                                               |Completed           |
 | Https Encryption - SSL/TLS                                                                       |Completed           |
 
+### Sprint Four Goals
+| Task                                                                                                    | Role               |
+| --------------------------------------------------------------------------------------------------------|:------------------:|
+| Implement Passportjs Authentication                                                                     | Developer          |
+| Configure Google Authentication to bridge to User Profile                                               | Junior Developer   |
+| Automate Build to Run On Command                                                                        | IT Operations      |
+| Configure Slave Database                                                                                | Developer          |
+| Implement A Unauthenticated User Dashboard                                                              | UI/UX              |
+| Implement Media Queries to Accommodate Responsiveness                                                   | UI/UX              |
+
+This Sprint we ran into few problems and had to prioritize our goals again so we can meet the midterm requirements. We were lacking on the Operation so we shifted our focus towards the automation. We discussed as a team to set goals for the midterm which was to make sure Login and Sign Up is fully functional and integrated with MongoDB. Our UI/UX role had to refine the login and sign up form layout of the webpages, and create Dashboard page for our Video Call window for both Authenticated and Unathenticated users. Our project manager was keeping track of everyone's work and make sure everyone was on top of their task. Also, the project manager had to prepare the written report and a oral presentation. The IT Operations had to make sure everyone's environment can deploy without manual intervention.
